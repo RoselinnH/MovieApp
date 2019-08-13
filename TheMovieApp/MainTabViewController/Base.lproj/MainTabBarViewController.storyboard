@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mPt-i6-kcL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="t7v-ip-lHt">
+            <objects>
+                <tabBarController id="mPt-i6-kcL" customClass="MainTabBarViewController" customModule="TheMovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="fill" id="F00-cC-Dh6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.09984164049051758" green="0.27872047642781861" blue="0.57219497382943407" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wjb-lK-MQM" kind="relationship" relationship="viewControllers" id="gZ8-IV-Wie"/>
+                        <segue destination="YE5-r9-Gwq" kind="relationship" relationship="viewControllers" id="AOt-If-Z59"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MMV-Cc-mai" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2459" y="95"/>
+        </scene>
+        <!--MoviesViewController-->
+        <scene sceneID="plM-br-0eo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MoviesViewController" id="wjb-lK-MQM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" id="cpF-aN-oZv" userLabel="MoviesTab"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9GJ-Mq-Nbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1433" y="94"/>
+        </scene>
+        <!--MoviesViewController-->
+        <scene sceneID="xbn-CG-8KR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MoviesViewController" id="YE5-r9-Gwq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favourites" id="BJv-Ix-1oY" userLabel="FavouritesTab"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1n-HG-5NT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2459" y="658"/>
+        </scene>
+    </scenes>
+</document>
